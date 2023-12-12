@@ -1,1 +1,1 @@
-<img src="../pong-game.png">
+<img src="../images/pong-game.png">
