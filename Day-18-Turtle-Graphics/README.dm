@@ -1,1 +1,1 @@
-<img src="..//images/turtle-graphics.png">
+<img src="../images/turtle-graphics.png">
