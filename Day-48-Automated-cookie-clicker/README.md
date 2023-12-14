@@ -1,1 +1,1 @@
-<img src="clicker.gig">
+<img src="clicker.gif">
