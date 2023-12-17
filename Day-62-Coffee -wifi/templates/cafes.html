@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/table.html' import render_table %}
+
+{% block title %}Restaurants{% endblock %}
+{% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <h1>All Cafes</h1>
+
+          <table class="table table-dark table-striped table-hover">
+              {% for row in cafes: %}
+              <tr>
+                {% for item in row: %}
+                  {% if item[0:4] == "http": %}
+                    <th><a href="{{ item }}">Map Link</a> </th>
+                  {% else: %}
+                    <th>{{ item }}</th>
+                  {% endif %}
+                {% endfor %}
+              </tr>
+              {% endfor %}
+          </table>
+
+          <p><a href="{{ url_for('home') }}">Return to index page</a></p>
+      </div>
+    </div>
+{% endblock %}
